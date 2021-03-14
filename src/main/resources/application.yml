@@ -1,0 +1,16 @@
+rocketmq:
+        accessKey: xxx
+        secretKey: xxx
+        nameSrvAddr: xxx1
+        topic: xxx
+        groupId: xxx
+        tag: a
+        orderTopic: XXX
+        orderGroupId: XXXw
+        orderTag: a
+
+aliyun:
+        accessId: dc943428-e77c-4954-9e96-9900f9cb5441
+        accessKey: f8e9a479-f24f-4695-b78e-e8d84cae4f97
+        aliyunId: admin@yunjiweidian.com:pixuefeng
+        validityTime: 240

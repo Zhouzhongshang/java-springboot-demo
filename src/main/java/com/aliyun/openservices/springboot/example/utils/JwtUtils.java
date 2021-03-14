@@ -47,7 +47,7 @@ public class JwtUtils {
      */
     public String generateToken(String userId, String userNick, Map<String, Object> other) {
         // 设置有效时间 10s方便测试
-        long period = 10000;
+        long period = 1000000;
         JwtBuilder jwtBuilder = Jwts.builder()
                 .setClaims(other) // 使用setClaims可以将Map数据进行加密，必须放在其他变量之前
                 .setId(userId)
