@@ -1,11 +1,12 @@
-package com.aliyun.openservices.springboot.example.login;
+package com.aliyun.openservices.springboot.example.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyun.openservices.shade.com.google.common.collect.Maps;
+import com.aliyun.openservices.springboot.example.enums.InventoryEnum;
 import com.aliyun.openservices.springboot.example.utils.JwtUtils;
 import io.jsonwebtoken.Claims;
-import org.springframework.http.HttpRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,9 +24,18 @@ import java.util.HashMap;
 @RestController
 public class LoginService {
 
+    @Autowired
+    private ServiceEnumService serviceEnumService;
+
     @Resource
     private JwtUtils jwtUtils;
 
+    /**
+     * 登录
+     * @param id
+     * @param name
+     * @return
+     */
     @RequestMapping("/login")
     public String login(String id,String name){
         HashMap<String, Object> authorityMap = Maps.newHashMap();
@@ -33,6 +43,11 @@ public class LoginService {
         return  jwtUtils.generateToken(id, name, authorityMap);
     }
 
+    /**
+     * 模拟接口
+     * @param request
+     * @return
+     */
     @RequestMapping("get")
     public String get(HttpServletRequest request){
         Claims token = jwtUtils.parseToken(request.getHeader("token"));
@@ -40,4 +55,14 @@ public class LoginService {
         System.out.println(JSON.toJSONString(token));
         return JSON.toJSONString(token);
     }
+
+    /**
+     * 枚举中的策略模式
+     */
+    @GetMapping("testEnum")
+    public void testEnum(){
+        InventoryEnum.SAVE.serviceInventory(serviceEnumService);
+        InventoryEnum.SUBMIT.serviceInventory(serviceEnumService);
+    }
+
 }
