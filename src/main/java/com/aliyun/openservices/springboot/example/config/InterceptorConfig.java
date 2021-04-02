@@ -20,7 +20,7 @@ public class InterceptorConfig  implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 设置所有的路径都要进行拦截，除了/test/login
-        //注释打开则开启验证
-       // registry.addInterceptor(tokenInterceptor).addPathPatterns("/**").excludePathPatterns("/login/**");
+        //测试jwt时打开
+      //  registry.addInterceptor(tokenInterceptor).addPathPatterns("/**").excludePathPatterns("/login/**");
     }
 }
