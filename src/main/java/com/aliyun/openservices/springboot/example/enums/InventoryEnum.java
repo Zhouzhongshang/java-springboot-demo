@@ -1,6 +1,5 @@
 package com.aliyun.openservices.springboot.example.enums;
 
-import com.aliyun.openservices.springboot.example.service.LoginService;
 import com.aliyun.openservices.springboot.example.service.ServiceEnumService;
 
 /**
