@@ -2,7 +2,6 @@ package com.aliyun.openservices.springboot.example.consumer;
 
 import com.aliyun.openservices.ons.api.bean.ConsumerBean;
 import com.aliyun.openservices.springboot.example.config.MqConfig;
-import com.aliyun.openservices.springboot.example.normal.ConsumerClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

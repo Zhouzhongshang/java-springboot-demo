@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.normal;
+package com.aliyun.openservices.springboot.example.mq.normal;
 
 import com.aliyun.openservices.ons.api.Action;
 import com.aliyun.openservices.ons.api.ConsumeContext;

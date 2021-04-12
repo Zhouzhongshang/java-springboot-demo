@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.normal;
+package com.aliyun.openservices.springboot.example.mq.normal;
 
 import com.aliyun.openservices.ons.api.MessageListener;
 import com.aliyun.openservices.ons.api.PropertyKeyConst;

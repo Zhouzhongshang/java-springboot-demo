@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.transaction;
+package com.aliyun.openservices.springboot.example.mq.transaction;
 
 import com.aliyun.openservices.ons.api.Message;
 import com.aliyun.openservices.ons.api.transaction.LocalTransactionChecker;

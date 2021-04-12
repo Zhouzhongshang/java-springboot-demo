@@ -7,7 +7,6 @@ import com.aliyun.openservices.ons.api.exception.ONSClientException;
 import com.aliyun.openservices.shade.com.alibaba.fastjson.JSON;
 import com.aliyun.openservices.springboot.example.config.MqConfig;
 import com.aliyun.openservices.springboot.example.data.UserInfo;
-import com.aliyun.openservices.springboot.example.normal.ProducerClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

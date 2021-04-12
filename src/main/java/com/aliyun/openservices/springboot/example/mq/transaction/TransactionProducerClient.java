@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.transaction;
+package com.aliyun.openservices.springboot.example.mq.transaction;
 
 import com.aliyun.openservices.ons.api.bean.TransactionProducerBean;
 import com.aliyun.openservices.springboot.example.config.MqConfig;

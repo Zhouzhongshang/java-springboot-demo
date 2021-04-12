@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.batch;
+package com.aliyun.openservices.springboot.example.mq.batch;
 
 import com.aliyun.openservices.ons.api.Action;
 import com.aliyun.openservices.ons.api.ConsumeContext;

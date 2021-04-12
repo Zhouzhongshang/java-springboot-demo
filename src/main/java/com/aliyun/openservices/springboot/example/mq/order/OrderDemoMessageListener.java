@@ -1,4 +1,4 @@
-package com.aliyun.openservices.springboot.example.order;
+package com.aliyun.openservices.springboot.example.mq.order;
 
 import com.aliyun.openservices.ons.api.Message;
 import com.aliyun.openservices.ons.api.order.ConsumeOrderContext;

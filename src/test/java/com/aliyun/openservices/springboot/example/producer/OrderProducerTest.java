@@ -5,7 +5,6 @@ import com.aliyun.openservices.ons.api.SendResult;
 import com.aliyun.openservices.ons.api.bean.OrderProducerBean;
 import com.aliyun.openservices.ons.api.exception.ONSClientException;
 import com.aliyun.openservices.springboot.example.config.MqConfig;
-import com.aliyun.openservices.springboot.example.order.OrderProducerClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
