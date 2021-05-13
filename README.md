@@ -5,7 +5,10 @@
 
 todo:
 支付功能：支付宝、微信、银行卡
-秒杀系统设计与实现
+
+秒杀系统设计与实现：
+文档：https://blog.csdn.net/weixin_44734394/article/details/106884738
+
 docker
 xxl-job
 spring security
